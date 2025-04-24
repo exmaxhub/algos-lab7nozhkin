@@ -59,11 +59,6 @@ def is_palindrome(word):
 
 def find_palindromes_bruteforce(input_word):
     palindromes = []
-    n = len(input_word)
-    for i in range(n):
-        for j in range(i + 1, n):
-            if is_palindrome(input_word[i:j+1]):
-                palindromes.append(input_word[i:j+1])
     return palindromes
 
 user_input = input("Введите текст: ")
